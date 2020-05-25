@@ -67,7 +67,7 @@ component('postList',{
 
 
 
-
+                  console.log(successcallback)
                   $scope.product_rows=successcallback.data
 
                   $scope.value=successcallback.data.error_name
@@ -76,7 +76,6 @@ component('postList',{
 
                   $scope.id=successcallback.data.error_id
 
-                  console.log(successcallback.status,successcallback.statusText,successcallback.data)
 
 
                   $scope.throttle=successcallback.data.detail
