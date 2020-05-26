@@ -85,7 +85,8 @@
             </div>
   
   <div class='col-lg-2 mb-3'  id='submit'>
-   <label for="id_submit">submit:</label><input type="submit" value='submit' id='id_submit' class='form-control' >
+   <label for="id_submit">submit:</label><input  type="submit" value='submit' id='id_submit' class='form-control'      
+ />
  </div>
 </form>
 </div>
@@ -144,9 +145,11 @@
               <li>ID:{{products.id}}</li>
                             <li>Tags:{{ products.tags }}</li>
 
-              <li>Link:<a ng-href="{{products.link}}">{{products.link}}</a></li>
+              <li>
+                Link:<a ng-href="{{products.link}}">{{products.link}}</a>             
+              </li>
 
-              <li>Query:<a ng-href="{{products.Query}}">{{products.Query}}</a></li>
+              <li>Query:<a ng-href="{{products.Query}}" >{{products.Query}}</a></li>
 
 
 
@@ -161,6 +164,8 @@
 
 </div>
 <div class='container'><dir-pagination-controls></dir-pagination-controls></div>
+</div>
+
 
 </div>
 </div>

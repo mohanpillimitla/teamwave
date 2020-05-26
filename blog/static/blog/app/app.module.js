@@ -4,6 +4,9 @@ angular.module('blog',[
 	'ngRoute',
 	'posts',
 
-'angularUtils.directives.dirPagination',
+    'angularUtils.directives.dirPagination',
+
+    'confirmClick',
+
 
 	'ngResource']);

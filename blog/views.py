@@ -28,7 +28,7 @@ class UserDayThrottle(UserRateThrottle):
 
 
 @api_view(['GET'])
-@throttle_classes([UserMinThrottle, UserDayThrottle])
+@throttle_classes([UserDayThrottle,UserMinThrottle])
 
 def quest_form_api(request,query):
 
