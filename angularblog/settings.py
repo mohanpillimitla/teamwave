@@ -107,8 +107,7 @@ REST_FRAMEWORK = {
   ),
   'DEFAULT_THROTTLE_RATES': {
       'user_min': '5/min',
-      'user_day': '10/day',
-
+      'user_day': '100/day',
   }
 }
 

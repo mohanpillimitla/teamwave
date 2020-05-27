@@ -112,7 +112,7 @@
 </div>
 </div>
 
-<div ng-model='throttle'>
+<div ng-model='throttle'></div>
   <div ng-if='throttle'>
   <ul class='error'>
     <h4>
@@ -131,16 +131,16 @@
 
 
 
-<div ng-if="!value" >
+<div ng-if="!value" class='container' >
   <div ng-if="!throttle">
 
 
 <div    class="col-lg-14 " dir-paginate="products in product_rows | itemsPerPage:10" style="color:black;margin:20px;">
-      <div class="thumbnail">
+      <div class="thumbnail" style="border:1px ridge black;">
 
   <ul>
-  <h3><li>Title:{{products.title}}</li></h3>
-     <h4> 
+  <h4><li>Title:{{products.title}}</li></h4>
+     <h5> 
 
               <li>ID:{{products.id}}</li>
                             <li>Tags:{{ products.tags }}</li>
@@ -156,19 +156,21 @@
       
 
 
-  </h4>
+  </h5>
 
   </ul>
 </div>
 
 
 </div>
-<div class='container'><dir-pagination-controls></dir-pagination-controls></div>
+<div >
+  <dir-pagination-controls></dir-pagination-controls>
 </div>
 
 
 </div>
 </div>
+
 
 
 
